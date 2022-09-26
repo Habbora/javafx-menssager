@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="br.com.habbora.javafxmenssagerserver.Controller"
+            fx:id="ap_main" prefHeight="400" prefWidth="400">
+    <children>
+        <Label prefHeight="40" prefWidth="360" layoutX="20" layoutY="50" alignment="CENTER" text="Menssager Servidor">
+            <font>
+                <Font size="23"/>
+            </font>
+        </Label>
+        <ScrollPane fx:id="sp_main" prefHeight="224" prefWidth="364" layoutX="18" layoutY="98" fitToHeight="true">
+            <content>
+                <VBox fx:id="vbox_menssage" prefHeight="220" prefWidth="360"/>
+            </content>
+        </ScrollPane>
+        <TextField fx:id="tf_send" prefHeight="40" prefWidth="270" layoutX="20" layoutY="340"/>
+        <Button fx:id="btn_send" prefHeight="40" prefWidth="80" layoutX="300" layoutY="340" text="Enviar"/>
+    </children>
+</AnchorPane>
